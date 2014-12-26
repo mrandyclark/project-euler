@@ -12,9 +12,12 @@ PageManager.prototype.yourCode = function() {
 
 	var originalTriangle = this.eulerText;
 	console.log(originalTriangle);
-	
+
 	var six = this.anotherFunction("benson!");
 	console.log(six);
+
+	this.showResult(six);
+	return false;
 };
 
 // an example seperate function
@@ -40,4 +43,8 @@ PageManager.prototype.handleFormSubmit = function(evt) {
 	this.eulerText = $("#euler-text").val();
 	this.yourCode();
 	return true;
+};
+
+PageManager.prototype.showResult = function(result) {
+	return $("#result").html(result);
 };

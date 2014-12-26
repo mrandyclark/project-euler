@@ -10,6 +10,9 @@ PageManager.prototype.init = function () {
 // your project euler code goes here
 PageManager.prototype.yourCode = function() {
 
+	var originalTriangle = this.eulerText;
+	console.log(originalTriangle);
+	
 	var six = this.anotherFunction("benson!");
 	console.log(six);
 };
